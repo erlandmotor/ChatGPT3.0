@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 /// CHAT GPT ID
-String openAiToken = "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";
+String openAiToken = "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";
 
 // "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";
 
@@ -47,19 +47,19 @@ int maxMessageLimit = 10;
 bool showImageGeneration = true;
 
 /// ONBOARDING SCREEN 1 TEXT
-String Onboarding_Title1 = '''Your AI Assistance''';
+String Onboarding_Title1 = '''Bantuan AI Anda''';
 String Onboarding_Description1 =
-    '''Using This App, You can Ask Your questions and recieve articles using artificial assistance''';
+    '''Menggunakan Aplikasi Ini, Anda dapat Mengajukan pertanyaan dan menerima artikel menggunakan bantuan buatan''';
 
 /// ONBOARDING SCREEN 2 TEXT
-String Onboarding_Title2 = '''Your AI Assistance''';
+String Onboarding_Title2 = '''Bantuan AI Anda''';
 String Onboarding_Description2 =
-    '''Using This App, You can Ask Your questions and recieve articles using artificial assistance''';
+    '''Menggunakan Aplikasi Ini, Anda dapat Mengajukan pertanyaan dan menerima artikel menggunakan bantuan buatan''';
 
 /// ONBOARDING SCREEN 3 TEXT
-String Onboarding_Title3 = '''Your AI Assistance''';
+String Onboarding_Title3 = '''Bantuan AI Anda''';
 String Onboarding_Description3 =
-    '''Using This App, You can Ask Your questions and recieve articles using artificial assistance''';
+    '''Menggunakan Aplikasi Ini, Anda dapat Mengajukan pertanyaan dan menerima artikel menggunakan bantuan buatan''';
 
 /// IMAGE GENERTATE LIMIT
 int imageGenerateLimit = 3;
@@ -108,7 +108,7 @@ double perYearPrice = 149;
 /// PER YEAR
 
 /// CURRENCY NAME
-const String inAppCurrency = "\$";
+const String inAppCurrency = "\Rp";
 
 Widget appBarTitle(BuildContext context) {
   return Row(
@@ -116,7 +116,7 @@ Widget appBarTitle(BuildContext context) {
     mainAxisAlignment: MainAxisAlignment.start,
     children: [
       Text(
-        "Jerry",
+        "RootSec BOT",
         style: TextStyle(
             color: context.textTheme.headline1!.color,
             fontSize: 30,
