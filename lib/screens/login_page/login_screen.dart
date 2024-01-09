@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
       padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
       child: RichText(
         text: TextSpan(
-          text: 'Sign in',
+          text: 'Masuk Panel',
           style: const TextStyle(
               color: Colors.white, fontWeight: FontWeight.bold, fontSize: 58),
           children: <TextSpan>[
@@ -109,11 +109,11 @@ class _LoginScreenState extends State<LoginScreen> {
               if (value!.isEmpty) {
                 return "required !";
               } else if (!isValidEmail(value)) {
-                return "Enter Valid Email";
+                return "Masukan Email Dengan Benar";
               }
             },
             decoration: InputDecoration(
-              hintText: 'parth@gmail.com',
+              hintText: 'demo@gmail.com',
               hintStyle: TextStyle(color: Colors.grey.shade600),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -148,7 +148,7 @@ class _LoginScreenState extends State<LoginScreen> {
               if (value!.isEmpty) {
                 return "required !";
               } else if (!isValidPassword(value)) {
-                return "Enter Valid Password";
+                return "Masukan Katasandi Dengan Benar";
               }
             },
             decoration: InputDecoration(
@@ -183,7 +183,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 // );
               },
               child: Text(
-                'Forgot Password',
+                'Lupa Kata Sandi',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Color(0xff3FB085),
@@ -243,7 +243,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   );
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text("Sign in successfully..."),
+                      content: Text("Berhasil Masuk..."),
                       behavior: SnackBarBehavior.floating,
                       backgroundColor: Colors.green,
                     ),
@@ -251,7 +251,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text("Sign in failed..."),
+                      content: Text("Gagal Masuk..."),
                       behavior: SnackBarBehavior.floating,
                       backgroundColor: Colors.red,
                     ),
@@ -263,7 +263,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Obx(() => (loginController.isLoading.value)
                 ? Lottie.asset(AppAssets.loadingFile, height: 20)
                 : Text(
-                    'Sign in',
+                    'Login Panel',
                     style: TextStyle(color: Colors.white, fontSize: 16),
                   )),
           ),
@@ -371,7 +371,7 @@ class _LoginScreenState extends State<LoginScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            'Dont have an account?',
+            'Tidak punya akun?',
             style: TextStyle(
               fontSize: 15,
               color: Colors.grey.shade500,
@@ -379,7 +379,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           const SizedBox(width: 5),
           const Text(
-            'Sign up',
+            'DAFTAR AKUN',
             style: TextStyle(
                 color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
           ),
